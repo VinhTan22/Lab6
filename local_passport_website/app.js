@@ -25,6 +25,6 @@ app.use(passport.session());
 require("./config/passport")(passport);
 
 // Routes
-app.use("/", authRoutes);
+app.use('/', authRoutes);
 
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
